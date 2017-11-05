@@ -1,3 +1,6 @@
+li {
+  list-style: none; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -389,9 +392,12 @@ template {
 [hidden] {
   display: none; }
 
+#bell-icon {
+  height: 25px; }
+
 .header {
   height: 70px;
   background: #0b0b0b;
-  display: flex; }
+  color: #fff; }
 
 /*# sourceMappingURL=application.css.map */
