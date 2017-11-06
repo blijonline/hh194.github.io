@@ -2,6 +2,21 @@
 	display: flex;
 }
 
-.header-nav-name {
+.header-nav-notification {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
 
+.header-nav-name {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.header-nav-userpicture {
+	height: 50px;
+	margin-right: 20px;
+	padding-left: 10px;
+	border-left: 1px solid $grey;
 }
