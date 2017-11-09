@@ -395,8 +395,11 @@ body {
 li {
   list-style: none; }
 
-#bell-icon {
-  height: 25px; }
+#noti-bell {
+  height: 25px;
+  cursor: pointer;
+  outline: 0;
+  position: relative; }
 
 .header-nav-list {
   display: flex; }
@@ -416,6 +419,83 @@ li {
   margin-right: 20px;
   padding-left: 10px;
   border-left: 1px solid #b2b2b2; }
+
+.header-nav-notification {
+  position: relative;
+  display: flex; }
+
+/* THE RED NOTIFICATIONS COUNTER. */
+#noti_Counter {
+  display: block;
+  position: absolute;
+  background: #D91420;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 1px 3px;
+  margin: 10px 0 0 15px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  z-index: 1; }
+
+/* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+#notifications {
+  display: none;
+  width: 230px;
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  background: #fff;
+  border: solid 1px rgba(100, 100, 100, 0.2);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  z-index: 0; }
+
+/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+#notifications:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  color: transparent;
+  border: 10px solid #CCC;
+  border-color: transparent transparent #D91420;
+  margin-top: -20px;
+  margin-left: 10px; }
+
+.noti-heading {
+  display: block;
+  color: #fff;
+  background: #D91420;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 8px;
+  margin: -1px;
+  border-bottom: solid 1px rgba(100, 100, 100, 0.3); }
+
+.noti1,
+.noti2 {
+  color: #0b0b0b;
+  padding: 10px 30px 10px 10px; }
+
+.noti-sep {
+  border-top: solid 1px rgba(100, 100, 100, 0.3);
+  width: 90%;
+  margin: auto; }
+
+.noti-container {
+  display: flex;
+  flex-direction: column; }
+
+.noti-rule {
+  display: flex;
+  justify-content: space-between; }
+
+.fa-times {
+  color: #b2b2b2;
+  align-self: center;
+  font-size: 24px;
+  padding-right: 20px; }
 
 .header {
   height: 70px;

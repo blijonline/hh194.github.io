@@ -4,15 +4,19 @@
   <meta charset="utf-8">
   <title>Web App Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/application.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
   <body>
 
 <header class="header">
-  <p class="logo"><a href="#"><span class="your">Your</span class="app"><span>App&trade;<span></a> </p>
+  <p class="logo" data-tip=""><a href="#"><span class="your">Your</span class="app"><span>App&trade;<span></a> </p>
     <ul class="header-nav-list" role="navigation"> 
-      <li class="header-nav-notification"> 
-    <svg version="1.1" id="bell-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <li class="header-nav-notification">
+      <div id="noti_Counter"></div>
+
+
+    <svg version="1.1" id="noti-bell" data-tip="Techdegree Project Update: You passed with flying colors!" tabindex="1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
     <style type="text/css">
       .st0{fill:#FFFFFF;}
@@ -24,6 +28,15 @@
       </g>
     </g>
     </svg>
+    <div id="notifications">
+      <h3 class="noti-heading"> Notifications </h3>
+      <div class="noti-container" style="height:200px;">
+        <div class="noti-rule"><p class="noti1">Techdegree Project Update: You passed with flying colors</p><i class="fa fa-times"></i></div>
+        <div class="noti-sep"> </div>
+        <div class="noti-rule"><p class="noti2">How to Build a Web App Dashboard</p><i class="fa fa-times" aria-hidden="true"></i></div>
+      </div>
+    </div>
+
  </li>
       <li><img class="header-nav-userpicture" src="assets/img/hh.png"></li>
       <li class="header-nav-name">Henri Huisman</li>
@@ -31,5 +44,12 @@
 </header>
     <div class="main-nav">
       </div>
+      <script
+              src="https://code.jquery.com/jquery-3.2.1.min.js"
+              integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous">
+      </script>
+      <script src="js/app.js"></script>
+      
   </body>
   </html>
