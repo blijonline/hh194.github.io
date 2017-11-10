@@ -395,6 +395,9 @@ body {
 li {
   list-style: none; }
 
+.normal {
+  font-weight: normal; }
+
 #noti-bell {
   height: 25px;
   cursor: pointer;
@@ -487,7 +490,8 @@ li {
   display: flex;
   flex-direction: column; }
 
-.noti-rule {
+.noti-rule1,
+.noti-rule2 {
   display: flex;
   justify-content: space-between; }
 
@@ -495,7 +499,8 @@ li {
   color: #b2b2b2;
   align-self: center;
   font-size: 24px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  cursor: pointer; }
 
 .header {
   height: 70px;

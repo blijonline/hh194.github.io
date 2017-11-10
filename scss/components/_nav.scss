@@ -102,7 +102,9 @@
     flex-direction: column;
 }
 
-.noti-rule {
+.noti-rule1,
+.noti-rule2
+ {
     display: flex;
     justify-content: space-between;
 }
@@ -110,6 +112,7 @@
 .fa-times {
     color: $grey;
     align-self: center;
-    font-size: 24px;
+    font-size: 24px; 
     padding-right: 20px;
+    cursor: pointer;
 }

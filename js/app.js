@@ -26,4 +26,21 @@
         $('#notifications').click(function () {
             return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
         });
+
+        // remove notifications when clicked on the X
+
+        $('#noti-x1').click( () => {
+            $('.noti-rule1').remove();
+            $('.noti-sep').remove();
+        });
+
+         $('#noti-x2').click( () => {
+            $('.noti-rule2').remove();
+            $('.noti-sep').remove();
+        });
+
+         // read/unread text on click
+
+
+
     });
