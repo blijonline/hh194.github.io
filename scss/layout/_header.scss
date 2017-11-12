@@ -10,7 +10,13 @@
 .logo a {
 	text-decoration: none;
 	color: $white;
+	font-size: 24px;
 	margin-left: 20px;
+}
+
+.logo a:hover {
+	color: $red;
+	transition: 0.2s ease-in;
 }
 
 .your {
@@ -19,5 +25,13 @@
 }
 
 .app {
-	
+	font-weight: $font-weight--light;
+}
+
+// ***************  Media Queries **************
+
+@media (min-width:320px) and (max-width:426px) {
+ .logo a {
+ 	font-size: 18px;
+ }
 }

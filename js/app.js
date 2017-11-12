@@ -34,13 +34,16 @@
             $('.noti-sep').remove();
         });
 
-         $('#noti-x2').click( () => {
+        $('#noti-x2').click( () => {
             $('.noti-rule2').remove();
             $('.noti-sep').remove();
         });
 
-         // read/unread text on click
+        // add border on active tab sidebar   
 
-
+        $('.icon-div').on('click', function(){
+            $('div.current').removeClass('current');
+            $(this).addClass('current');
+        });
 
     });

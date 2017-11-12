@@ -15,7 +15,7 @@
 }
 
 .header-nav-userpicture {
-	height: 50px;
+	height: 35px;
 	margin-right: 20px;
 	padding-left: 10px;
 	border-left: 1px solid $grey;
@@ -52,11 +52,11 @@
     width:230px;
     position:absolute;
     top:50px;
-    left:-10px;
-    background: $white;
+    left:-150px;
+    background: #eaeaea;
     border:solid 1px rgba(100, 100, 100, .20);
     -webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .20);
-    z-index: 0;
+    z-index: 1;
 }
 
 /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
@@ -70,7 +70,7 @@
     border:10px solid #CCC;
     border-color:transparent transparent $red;
     margin-top:-20px;
-    margin-left:10px;
+    margin-left:150px;
 }
 
 .noti-heading {
@@ -78,7 +78,7 @@
     color: $white; 
     background:$red;
     font-weight:bold;
-    font-size:13px;    
+    font-size:14px;    
     padding:8px;
     margin:-1px;
     border-bottom:solid 1px rgba(100, 100, 100, .30);
@@ -88,8 +88,15 @@
 .noti1,
 .noti2 {
     color: $black;
-    padding: 10px 30px 10px 10px;    
+    padding: 10px 30px 10px 10px;
+    cursor: pointer;   
 }
+
+.noti1:hover,
+.noti2:hover {
+    color: $red;
+    transition: 0.4s ease-in;
+} 
 
 .noti-sep {
     border-top: solid 1px rgba(100, 100, 100, .30);
@@ -100,7 +107,17 @@
 .noti-container {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
+
+.noti-rule1 {
+    padding-bottom: 5px;
+}
+
+.noti-rule2 {
+    padding-top: 5px;
+}
+
 
 .noti-rule1,
 .noti-rule2
@@ -109,10 +126,32 @@
     justify-content: space-between;
 }
 
+.noti-rule1:hover,
+.noti-rule2:hover {
+    background: $white;
+    transition: 0.4s ease-in;
+}
+
+
 .fa-times {
     color: $grey;
     align-self: center;
     font-size: 24px; 
     padding-right: 20px;
     cursor: pointer;
+}
+
+.fa-times:hover {
+    color: $red;
+    transition: 0.4s ease-in;
+}
+
+
+// ***************  Media Queries **************
+
+
+@media (min-width:320px) and (max-width:425px) {
+    .header-nav-name {
+        display: none;
+    }
 }

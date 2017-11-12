@@ -1,0 +1,52 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.title-area {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+
+}
+
+.page-title-div {
+	width: 155px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	color: $grey;
+}
+
+.searchbar-div {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 1;
+	position: relative;
+	height: 65px;
+	border-left: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
+	background: $ultra-light-grey;
+}
+
+.searchbar-div .fa-search {
+	position: absolute;
+    top: 24px;
+	right: 55px;
+	font-size: 15px;
+}
+
+#searchbar {
+	display: flex;
+	flex-grow: 1;
+	align-self: center;
+	max-width: 382px;
+	height: 40px;
+	margin: 0 25px;
+	padding-left: 18px;
+	border-radius: 5px;
+	border: solid 1px $light-grey;
+	outline: 0;
+
+}
