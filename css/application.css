@@ -398,6 +398,30 @@ body {
 li {
   list-style: none; }
 
+.alert {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  margin: 15px auto;
+  border-radius: 5px;
+  max-width: 90%; }
+
+.closebtn {
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  order: 2; }
+
+.closebtn:hover {
+  color: black; }
+
 #noti-bell {
   height: 25px;
   cursor: pointer;
@@ -530,11 +554,15 @@ li {
 .container {
   display: flex;
   flex-direction: row;
-  height: 100vh; }
+  flex-wrap: wrap; }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
 
 .title-area {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between; }
 
 .page-title-div {
@@ -572,6 +600,24 @@ li {
   border: solid 1px #dfdfdf;
   outline: 0; }
 
+@media (min-width: 426px) and (max-width: 767px) {
+  .page-title-div {
+    width: 100px;
+    align-items: center; }
+
+  .page-title-div h1 {
+    font-size: 18px; }
+
+  #searchbar {
+    font-size: 14px; } }
+@media (min-width: 320px) and (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; }
+
+  .page-title-div {
+    display: none; } }
 .header {
   height: 70px;
   background: #0b0b0b;
@@ -650,9 +696,7 @@ svg:hover .hover {
     border-left: solid 2px #fff; } }
 @media (min-width: 320px) and (max-width: 426px) {
   .sidebar {
-    display: flex;
     flex-direction: row;
-    flex-grow: 1;
     height: 50px; }
 
   .icon-container {

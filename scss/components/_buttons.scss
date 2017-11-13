@@ -1,0 +1,25 @@
+.alert {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin: 15px auto;
+    border-radius: 5px;
+    max-width: 90%;
+}
+
+.closebtn {
+    margin-right: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    order:2;
+}
+
+.closebtn:hover {
+    color: black;
+}
