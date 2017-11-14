@@ -422,6 +422,36 @@ li {
 .closebtn:hover {
   color: black; }
 
+.line-chart-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.line-chart-buttons {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn {
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  background: #0b0b0b;
+  color: #fff;
+  padding: 8px;
+  border: 0;
+  outline: 0; }
+
+.btn:hover {
+  color: #D91420;
+  transition: 0.3s ease-in; }
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .btn {
+    font-size: 12px; }
+
+  .line-chart-container h3 {
+    margin-top: 0; } }
 #noti-bell {
   height: 25px;
   cursor: pointer;
@@ -599,6 +629,16 @@ li {
   border-radius: 5px;
   border: solid 1px #dfdfdf;
   outline: 0; }
+
+.alert-container {
+  max-width: 1060px;
+  width: 90%;
+  margin: 0 auto; }
+
+.line-chart-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1060px; }
 
 @media (min-width: 426px) and (max-width: 767px) {
   .page-title-div {

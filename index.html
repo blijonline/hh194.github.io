@@ -131,14 +131,34 @@
   Hey you! Please close this alert box!
 </div> <!-- /.alert -->
   </div> <!-- /.alert-container -->
+  
+  <div class="line-chart-container"> 
+ <!-- <div class="line-chart-heading">  -->
+  <div class="line-chart-heading">
+    <h3>Traffic</h3> 
+   <div class="line-chart-buttons">
+          <button class="btn" type="button" data-type="hourly" name="button">Hourly</button>
+          <button class="btn" type="button" data-type="daily" name="button">Daily</button>
+          <button class="btn" type="button" data-type="weekly" name="button">Weekly</button>
+          <button class="btn" type="button" data-type="monthly" name="button">Monthly</button>
+  </div> <!-- /.line-chart-buttons -->
+  </div> <!-- /.line-chart-heading -->
+<!--  </div> /.line-chart-heading -->
+ <div class="chart-area"> 
+  <canvas id="lineChart"></canvas>
+ </div> <!-- /.chart-area -->
+  </div> <!-- /.line-chart-container -->
     </div> <!-- /.main-content -->
 </div> <!-- /.container -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
       <script
               src="https://code.jquery.com/jquery-3.2.1.min.js"
               integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
               crossorigin="anonymous">
       </script>
-      <script src="js/app.js"></script>
-      
+      <script type="text/javascript" src="js/charts.js"> 
+      </script>
+      <script type="text/javascript" src="js/app.js">
+      </script>
   </body>
   </html>
