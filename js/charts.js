@@ -43,7 +43,7 @@ weekly = {
     {
       fill: true,
       lineTension: 0.1,
-      backgroundColor: "rgba(217, 20, 32, .6",
+      backgroundColor: "rgba(217, 20, 32, .6)",
       borderColor: "#FB6B72",
       pointBackgroundColor: "#D91420",
       pointRadius: 3,
@@ -69,28 +69,25 @@ dailyTraffic = {
   datasets: [
     {
       fill: true,
-      backgroundColor: "rgba(146, 244, 206, 0.6)",
-      borderColor: "#FB6B72",
-      pointBackgroundColor: "#D91420",
-      pointRadius: 3,
-      data: [170, 80, 72, 35, 66, 123, 155]
+      backgroundColor: "#D91420",
+      data: [85, 110, 100, 85, 84, 90, 100]
     }
   ]
 };
 mobileUser = {
-  labels: ["Tablets", "Phones", "Desktop"],
+  labels: ["Phones", "Tablets", "Desktop"],
   datasets: [
     {
-      data: [9, 21, 70],
+      data: [20, 30, 50],
       backgroundColor: [
-        "rgba(244, 207, 146, 0.6)",
-        "rgba(244, 167, 146, 0.6)",
-        "rgba(171, 244, 146, 0.6)"
+        "rgba(203, 134, 0, 0.6)",
+        "rgba(166, 144, 181, 0.6)",
+        "rgba(217, 20, 32, .6)"
       ],
       hoverBackgroundColor: [
-        "rgb(244, 207, 146)",
-        "rgb(244, 167, 146)",
-        "rgb(171, 244, 146)"
+        "#CB8600",
+        "#A690B5",
+        "#D91420"
       ],
       fill: true,
       pointBackgroundColor: "#fff",
@@ -111,16 +108,16 @@ var newChart = new Chart(trafficChart, {
   options: chartOptions // set chart options
 });
 
-// var barChart = new Chart(dailyTrafficChart, {
-//   type: 'bar', // set chart type
-//   data: dailyTraffic, // set data type
-//   options: chartOptions // set chart options
-// });
+var barChart = new Chart(dailyTrafficChart, {
+  type: 'bar', // set chart type
+  data: dailyTraffic, // set data type
+  options: chartOptions // set chart options
+});
 
-// var donutChart = new Chart(mobileUserChart, {
-//   type: 'doughnut', // set chart type
-//   data: mobileUser, // set data type
-// });
+var donutChart = new Chart(mobileUserChart, {
+  type: 'doughnut', // set chart type
+  data: mobileUser, // set data type
+});
 
 // change chart on button click
 

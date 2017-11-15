@@ -448,7 +448,8 @@ li {
 
 @media (min-width: 320px) and (max-width: 425px) {
   .btn {
-    font-size: 12px; }
+    font-size: 12px;
+    padding: 6px; }
 
   .line-chart-container h3 {
     margin-top: 0; } }
@@ -583,8 +584,7 @@ li {
     display: none; } }
 .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  flex-direction: row; }
 
 .main-content {
   display: flex;
@@ -633,12 +633,60 @@ li {
 .alert-container {
   max-width: 1060px;
   width: 90%;
-  margin: 0 auto; }
+  margin: 20px auto; }
 
 .line-chart-container {
   width: 90%;
   margin: 0 auto;
   max-width: 1060px; }
+
+.other-charts-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1060px; }
+
+.chart-area {
+  width: 50%;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 30px; }
+
+.line-chart-container {
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 30px; }
+
+.social-stats-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1060px; }
+
+.social-stats-container img {
+  height: 40px;
+  align-self: center; }
+
+.twitter-container,
+.facebook-container,
+.google-plus-container {
+  display: flex;
+  width: 30%;
+  height: 120px;
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  background: #fbfbfb;
+  margin-top: 30px; }
+
+.circle {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #D91420;
+  margin-left: 22px; }
 
 @media (min-width: 426px) and (max-width: 767px) {
   .page-title-div {
@@ -649,7 +697,18 @@ li {
     font-size: 18px; }
 
   #searchbar {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .other-charts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1060px; }
+
+  .chart-area {
+    width: 100%; } }
 @media (min-width: 320px) and (max-width: 426px) {
   .container {
     display: flex;
@@ -657,7 +716,18 @@ li {
     height: 100vh; }
 
   .page-title-div {
-    display: none; } }
+    display: none; }
+
+  .other-charts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1060px; }
+
+  .chart-area {
+    width: 100%; } }
 .header {
   height: 70px;
   background: #0b0b0b;

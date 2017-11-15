@@ -1,7 +1,6 @@
 .container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 }
 
 .main-content {
@@ -58,13 +57,68 @@
 .alert-container {
 	max-width: 1060px;
 	width: 90%;
-	margin: 0 auto
+	margin: 20px auto;
 }
 
 .line-chart-container {
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
+}
+
+.other-charts-container {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+.chart-area {
+	width: 50%;
+	border-bottom: 1px solid $light-grey;
+	padding-bottom: 30px;
+}
+
+.line-chart-container {
+	border-bottom: 1px solid $light-grey;
+	padding-bottom: 30px;
+}
+
+.social-stats-container {
+	display: flex;
+	justify-content: space-around;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+.social-stats-container img {
+	height: 40px;
+	align-self: center;
+}
+
+.twitter-container,
+.facebook-container,
+.google-plus-container {
+	display: flex;
+	width: 30%;
+	height: 120px;
+	align-items: center;
+	border: 1px solid $light-grey;
+	border-radius: 5px;
+	background: $ultra-light-grey;
+	margin-top: 30px;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: $red;
+	margin-left: 22px;
 }
 
 
@@ -83,7 +137,20 @@
 
 #searchbar {
 	font-size: 14px;
-}
+	}
+
+.other-charts-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px;
+	}
+
+.chart-area {
+	width: 100%;
+	}
 }
 
 @media (min-width:320px) and (max-width:426px) {
@@ -95,6 +162,19 @@
 
 .page-title-div {
 	display: none;
-}
+	}
+
+.other-charts-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px;
+	}
+
+.chart-area {
+	width: 100%;
+	}
 
 }
