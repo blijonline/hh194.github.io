@@ -85,12 +85,19 @@
 	padding-bottom: 30px;
 }
 
+.social-stats-heading {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
 .social-stats-container {
 	display: flex;
 	justify-content: space-around;
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
+	margin-bottom: 40px;
 }
 
 .social-stats-container img {
@@ -108,7 +115,7 @@
 	border: 1px solid $light-grey;
 	border-radius: 5px;
 	background: $ultra-light-grey;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .circle {
@@ -116,14 +123,140 @@
 	justify-content: center;
 	width: 75px;
 	height: 75px;
-	border-radius: 50%;
+	border-radius: 50px;
 	background-color: $red;
 	margin-left: 22px;
+	z-index: 1;
+}
+
+.visiters {
+	margin-left: 5%;
+}
+
+.count {
+	font-size: 52px;
+}
+
+.sm-title {
+	font-size: 18px;
+	font-weight: $font-weight--bold;
+	color: $red;
+	margin: 0;
+	margin-bottom: -10%;
+}
+
+.members-area {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px;
+}
+
+.new-members,
+.recent-activity {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.user-act {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 5%;
+}
+
+.user {
+	display: flex;
+	align-items: center;
+
+}
+
+.pf-img img {
+	width: 40px;
+}
+
+.pf-txt {
+	margin-left: 3%;
+}
+
+.pf-txt p {
+	margin: 0;
 }
 
 
+.new-members,
+.recent-activity
+ {
+	border-top: 1px solid $light-grey;
+	border-bottom: 1px solid $light-grey;
+}
+
+.new-members {
+	border-right: 1px solid $light-grey;
+}
+
+.name {
+	display:flex;
+	align-items: center;
+} 
+
 // ***************  Media Queries **************
 
+
+@media (max-width: 1050px) {
+	.count {
+	font-size: 46px
+	}
+}
+
+@media (max-width: 989px) {
+	
+    .sm-title {
+    	font-size: 16px;
+    }
+
+	.count {
+		font-size: 38px
+	}
+
+}
+
+@media (max-width: 909px) {
+	
+    .sm-title {
+    	font-size: 16px;
+    }
+
+	.count {
+		font-size: 32px
+	}
+
+}
+
+
+@media (max-width: 767px) {
+
+.social-stats-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}	
+
+.twitter-container,
+.facebook-container,
+.google-plus-container {
+	display: flex;
+	width: 65%;
+}
+
+.count {
+		font-size: 38px
+	}
+
+}
+ 
 @media (min-width:426px) and (max-width:767px) {
 
 .page-title-div {
@@ -148,6 +281,10 @@
 	max-width: 1060px;
 	}
 
+.sm-title {
+	color: $red;
+}
+
 .chart-area {
 	width: 100%;
 	}
@@ -157,7 +294,6 @@
 	.container {
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
 }
 
 .page-title-div {
@@ -175,6 +311,10 @@
 
 .chart-area {
 	width: 100%;
+	}
+
+	.count {
+		font-size: 34px
 	}
 
 }
