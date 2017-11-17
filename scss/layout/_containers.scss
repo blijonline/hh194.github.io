@@ -97,7 +97,8 @@
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
-	margin-bottom: 40px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid $light-grey;
 }
 
 .social-stats-container img {
@@ -165,6 +166,13 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-right: 5%;
+	margin-bottom: 5%;
+	padding-bottom: 3%;
+	border-bottom: 1px solid $light-grey;
+}
+
+.user-act:last-of-type {
+	border: 0;
 }
 
 .user {
@@ -186,15 +194,36 @@
 
 }
 
-.mail {
-	font-size: 8px;
+.pf-txt a {
+	font-size: 13px;
 }
 
-.new-members,
-.recent-activity
- {
-	border-top: 1px solid $light-grey;
-	border-bottom: 1px solid $light-grey;
+.recent-activity {
+	margin-left: 3%;
+}
+
+.ra-txt {
+	margin-left: 3%;
+	font-size: 13px;
+}
+
+.ra-txt p {
+	margin: 0;
+}
+
+.fa-angle-right {
+	font-size: 28px;
+	color: $red;
+	cursor: pointer;
+}
+
+.fa-angle-right:hover {
+	color: $black;
+	transition: 0.4s ease-in;
+}
+
+.date {
+	font-size: 12px;
 }
 
 .new-members {
@@ -205,6 +234,52 @@
 	display:flex;
 	align-items: center;
 } 
+
+.message-settings-area {
+	display:flex;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1060px
+}
+
+.message-area,
+.settings-area {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.message-area input,
+.message-area textarea,
+.message-area button
+ {
+	margin-right: 8%;
+	margin-bottom: 5%;
+}
+
+.message-area input,
+.message-area textarea,
+{
+	padding: 5px;
+}
+
+.settings-area p,
+.settings-area select {
+	margin-right: 5%
+}
+
+.buttons {
+	margin-right: 5%
+}
+
+.message-area {
+	border-right: 1px solid $light-grey;
+}
+
+.settings-area {
+	margin-left: 3%;
+}
+
 
 // ***************  Media Queries **************
 
@@ -258,6 +333,25 @@
 .count {
 		font-size: 38px
 	}
+
+.members-area {
+	flex-direction: column;
+}
+
+.new-members {
+	border-right: 0;
+	border-bottom: 1px solid $light-grey;
+	align-self: center;
+}
+
+.recent-activity {
+	align-self: center;
+}
+
+.new-members,
+.recent-activity {
+	width: 100%;
+}
 
 }
  
