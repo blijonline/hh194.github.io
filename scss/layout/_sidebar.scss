@@ -29,7 +29,8 @@ svg:hover .hover {
 
 .sidebar {
 	flex-direction: column;
-	width: 89px;
+	min-width: 89px;
+	max-width: 89px;
 }
 
 .icon-container {

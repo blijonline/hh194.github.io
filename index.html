@@ -304,8 +304,28 @@
     <div class="settings-area">
       
         <h3>SETTINGS</h3>
-          <p> Send Email Notification <button></button> </p>
-          <p> Set Profile to Public <button></button> </p>
+        <div class="set-option">
+          <p> Send Email Notification </p>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+              <label class="onoffswitch-label" for="myonoffswitch1">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+                </label>
+            </div> 
+         </div> <!-- /.set-option -->
+         
+        <div class="set-option">
+          <p> Set Profile to Public</p> 
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+              <label class="onoffswitch-label" for="myonoffswitch2">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+                </label>
+            </div> 
+          </div> <!-- /.set-option -->
+          
           <select>
           <option value="">Select Timezone</option>
           <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International Date Line West</option>
