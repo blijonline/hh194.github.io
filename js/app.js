@@ -59,4 +59,12 @@
     });
 });
 
+        // autocomplete function for searching members
+
+var input = document.getElementById("myinput");
+new Awesomplete(input, {
+    list: ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver", "Henri Huisman"]
+});
+
+
     });

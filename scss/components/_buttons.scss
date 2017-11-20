@@ -55,7 +55,9 @@
 
 
 .onoffswitch {
-    position: relative; width: 90px;
+    position: relative; 
+    min-width: 90px;
+    max-width: 90px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
