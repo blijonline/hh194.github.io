@@ -61,10 +61,9 @@
 
         // autocomplete function for searching members
 
-var input = document.getElementById("myinput");
+var input = document.getElementById("search-user");
 new Awesomplete(input, {
     list: ["Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver", "Henri Huisman"]
 });
-
 
     });
