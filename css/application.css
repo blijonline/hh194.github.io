@@ -406,8 +406,7 @@ li {
   /* Red */
   color: white;
   margin: 15px auto;
-  border-radius: 5px;
-  max-width: 90%; }
+  border-radius: 5px; }
 
 .closebtn {
   margin-right: 5px;
@@ -889,9 +888,16 @@ li {
 
 .message-user-area input,
 .message-user-area textarea {
-  border: 1px solid #dfdfdf; }
+  border: 1px solid #dfdfdf;
+  background: #fbfbfb;
+  color: #b2b2b2; }
 
 .message-user-area textarea {
+  flex-grow: 1; }
+
+.message-user-area form {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1; }
 
 .message-user-area button {
@@ -936,7 +942,9 @@ li {
 
 .settings-area select {
   padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background: #fbfbfb;
+  color: #b2b2b2; }
 
 .settings-area button {
   flex: 1;

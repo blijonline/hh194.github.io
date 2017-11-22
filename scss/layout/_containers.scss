@@ -287,9 +287,17 @@
 .message-user-area input,
 .message-user-area textarea {
 	border: 1px solid $light-grey;
+	background: $ultra-light-grey;
+	color: $grey;
 }
 
 .message-user-area textarea {
+	flex-grow: 1;
+}
+
+.message-user-area form {
+	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
 }
 
@@ -345,7 +353,8 @@
 .settings-area select {
 	padding: 10px;
 	border-radius: 5px;
-
+	background: $ultra-light-grey;
+	color: $grey;
 }
 
 .settings-area button {
