@@ -1,11 +1,11 @@
 .sidebar {
-	display: flex;
+	@include flexbox;
 	background: $red;
 }
 
 .icon-div {
-	display: flex;
-	justify-content: center;
+	@include flexbox;
+	@include justify-content(center);
 	cursor: pointer;
 }
 
@@ -13,8 +13,8 @@
 .members-icon,
 .visits-icon,
 .settings-icon {
+	@include align-self(center);
 	width: 40%;
-	align-self: center;
 }
 
 svg:hover .hover {
@@ -28,35 +28,35 @@ svg:hover .hover {
 @media (min-width:768px) {
 
 .sidebar {
-	flex-direction: column;
+	@include flex-direction(column);
 	min-width: 89px;
 	max-width: 89px;
 }
 
 .icon-container {
+	@include flexbox;
+	@include flex-direction(column);
 	height: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	@include justify-content(space-around);
 }
 
 .current {
 	border-left: solid 2px $white;
-}
+	}
 }
 
 @media (min-width:426px) and (max-width:767px) {
  .sidebar {
- 	flex-direction: column;
+ 	@include flex-direction(column);
  	width: 60px;
  }
 
 .icon-container {
+	@include flexbox;
+	@include flex-direction(column);
 	height: 300px;
 	width: 60px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
+	@include justify-content(space-around);
 }
 
 .current {
@@ -66,21 +66,19 @@ svg:hover .hover {
 
 @media (min-width:320px) and (max-width:426px) {
  .sidebar {
- 	flex-direction: row;
  	height: 50px;
  }
  .icon-container {
+ 	@include flexbox;
  	flex-grow: 1;
- 	display: flex;
- 	flex-direction: row;
  }
 
 .dashboard-icon,
 .members-icon,
 .visits-icon,
 .settings-icon {
+	@include align-self(center);
 	height: 40%;
-	align-self: center;
 }
 
 .current {

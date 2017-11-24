@@ -1,16 +1,16 @@
 .header-nav-list {
-	display: flex;
+	@include flexbox;
 }
 
 .header-nav-notification {
-	display: flex;
-	align-items: center;
+	@include flexbox;
+	@include align-items(center);
 	margin-right: 20px;
 }
 
 .header-nav-name {
-	display: flex;
-	align-items: center;
+	@include flexbox;
+	@include align-items(center);
 	margin-right: 20px;
 }
 
@@ -25,7 +25,7 @@
 
 .header-nav-notification {
 	position:relative;
-    display: flex;
+    @include flexbox;
 }
 
 /* THE RED NOTIFICATIONS COUNTER. */
@@ -105,8 +105,8 @@
 }
 
 .noti-container {
-    display: flex;
-    flex-direction: column;
+    @include flexbox;
+    @include flex-direction(column);
     font-weight: bold;
 }
 
@@ -122,8 +122,8 @@
 .noti-rule1,
 .noti-rule2
  {
-    display: flex;
-    justify-content: space-between;
+    @include flexbox;
+    @include justify-content(space-between);
 }
 
 .noti-rule1:hover,
@@ -134,8 +134,8 @@
 
 
 .fa-times {
+    @include align-self(center);
     color: $grey;
-    align-self: center;
     font-size: 24px; 
     padding-right: 20px;
     cursor: pointer;

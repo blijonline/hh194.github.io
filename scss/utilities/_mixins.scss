@@ -1,0 +1,42 @@
+//=========
+// Flexbox 
+//=========
+
+@mixin flexbox {
+     display: flex;
+}
+
+@mixin flexwrap {
+  flex-wrap: wrap;
+} 
+
+@mixin flex-direction($val) {
+  flex-direction: $val;
+}
+
+@mixin justify-content($val) {
+  justify-content: $val;
+}
+@mixin align-items($val) {
+  align-items: $val;
+}
+  
+@mixin align-self($val) {
+  align-self: $val;
+}
+
+@mixin order($val) {
+  order: $val;
+}
+
+@mixin flex($values) {
+  flex: $values;
+}
+
+@mixin flex-grow($val) {
+  flex-grow: $val;
+}  
+
+@mixin flex-basis($val) {
+  flex-basis: $val;
+}  

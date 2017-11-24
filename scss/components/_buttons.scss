@@ -1,6 +1,6 @@
 .alert {
-    display: flex;
-    justify-content: space-between;
+    @include flexbox;
+    @include justify-content(space-between);
     padding: 10px;
     background-color: #f44336; /* Red */
     color: white;
@@ -24,15 +24,15 @@
 }
 
 .line-chart-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
 }
 
 
 .line-chart-buttons {
-    display: flex;
-    justify-content: flex-end;
+    @include flexbox;
+    @include justify-content(flex-end);
 }
 
 .btn {

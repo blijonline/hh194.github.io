@@ -1,10 +1,10 @@
 .header {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
   height: 70px;
   background: $black;
   color: $white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo a {

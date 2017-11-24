@@ -1,32 +1,31 @@
 .container {
-	display: flex;
-	flex-direction: row;
+	@include flexbox;
 }
 
 .main-content {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
+	@include flexbox;
+	@include flex-direction(column);
+	@include flex(1);
 	margin-bottom: 3%;
 }
 
 .title-area {
-	display: flex;
-	justify-content: space-between;
+	@include flexbox;
+	@include justify-content(space-between);
 }
 
 .page-title-div {
+	@include flexbox;
+	@include justify-content(center);
 	width: 155px;
 	height: 65px;
-	display: flex;
-	justify-content: center;
 	color: $grey;
 }
 
 .searchbar-div {
-	display: flex;
-	justify-content: flex-end;
-	flex-grow: 1;
+	@include flexbox;
+	@include justify-content(flex-end);
+	@include flex(1);
 	position: relative;
 	height: 65px;
 	border-left: 1px solid $light-grey;
@@ -42,9 +41,9 @@
 }
 
 #searchbar {
-	display: flex;
-	flex-grow: 1;
-	align-self: center;
+	@include flexbox;
+	@include align-self(center);
+	@include flex(1);
 	max-width: 382px;
 	height: 40px;
 	margin: 0 25px;
@@ -68,8 +67,8 @@
 }
 
 .other-charts-container {
-	display: flex;
-	justify-content: space-between;
+	@include flexbox;
+	@include justify-content(space-between);
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
@@ -93,8 +92,8 @@
 }
 
 .social-stats-container {
-	display: flex;
-	justify-content: space-around;
+	@include flexbox;
+	@include justify-content(space-around);
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
@@ -103,17 +102,17 @@
 }
 
 .social-stats-container img {
+	@include align-self(center);
 	height: 40px;
-	align-self: center;
 }
 
 .twitter-container,
 .facebook-container,
 .google-plus-container {
-	display: flex;
+	@include flexbox;
+	@include align-items(center);
 	width: 30%;
 	height: 120px;
-	align-items: center;
 	border: 1px solid $light-grey;
 	border-radius: 5px;
 	background: $ultra-light-grey;
@@ -121,8 +120,8 @@
 }
 
 .circle {
-	display: flex;
-	justify-content: center;
+	@include flexbox;
+	@include justify-content(center);
 	width: 75px;
 	height: 75px;
 	border-radius: 50px;
@@ -149,9 +148,9 @@
 
 
 .user-act {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@include flexbox;
+	@include justify-content(space-between);
+	@include align-items(center);
 	margin-bottom: 5%;
 	padding-bottom: 3%;
 	border-bottom: 1px solid $light-grey;
@@ -162,8 +161,8 @@
 }
 
 .user {
-	display: flex;
-	align-items: center;
+	@include flexbox;
+	@include align-items(center);
 
 }
 
@@ -213,8 +212,8 @@
 }
 
 .name {
-	display:flex;
-	align-items: center;
+	@include flexbox;
+	@include align-items(center);
 } 
 
 
@@ -251,8 +250,8 @@
 // message area 
 
 .message-user-area {
-	display: flex;
-	flex-direction: column;
+	@include flexbox;
+	@include flex-direction(column);
 	border-right: 1px solid $light-grey;
 	border-top: 1px solid $light-grey;
 	grid-column-start: 1;
@@ -262,9 +261,9 @@
 }
 
 .awesomplete {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(flex-end);
 }
 
 .awesomplete ul {
@@ -273,7 +272,7 @@
 }
 
 #myinput {
-	flex: 1;
+	@include flex(1);
 }
 
 .message-user-area input,
@@ -292,13 +291,13 @@
 }
 
 .message-user-area textarea {
-	flex-grow: 1;
+	@include flex(1);
 }
 
 .message-user-area form {
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+	@include flexbox;
+	@include flex-direction(column);
+	@include flex(1);
 }
 
 .message-user-area button {
@@ -327,20 +326,20 @@
 // settings area
 
 .settings-area {
-	border-top: 1px solid $light-grey;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(space-between);
 	grid-column-start: 2;
 	grid-column-end: 3;
 	grid-row: 2;
+	border-top: 1px solid $light-grey;
 	padding-left: 5%;
 }
 
  .set-option {
- 	display: flex;
- 	justify-content: space-between;
- 	align-items: center;
+ 	@include flexbox;
+ 	@include justify-content(space-between);
+ 	@include align-items(center);
  	width: 60%;
  }
 
@@ -358,21 +357,21 @@
 }
 
 .settings-area button {
-	flex: 1;
+	@include flex(1);
 	outline: 0;
 }
 
 .buttons {
-	display: flex;
-	justify-content: space-between;
+	@include flexbox;
+	@include justify-content(space-between);
 }
 
 .save-btn,
 .cancel-btn {
+	@include align-self(flex-end);
 	padding: 10px;
 	border-radius: 5px;
 	border: 0;
-	align-self: flex-end;
 }
 
 .save-btn {
@@ -478,15 +477,15 @@
 @media (max-width: 767px) {
 
 .social-stats-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include flexbox;
+	@include flex-direction(column);
+	@include align-items(center);
 }	
 
 .twitter-container,
 .facebook-container,
 .google-plus-container {
-	display: flex;
+	@include flexbox;
 	width: 65%;
 }
 
@@ -495,17 +494,17 @@
 	}
 
 .members-area {
-	flex-direction: column;
+	@include flex-direction(column);
 }
 
 .new-members {
+	@include align-self(center);
 	border-right: 0;
 	border-bottom: 1px solid $light-grey;
-	align-self: center;
 }
 
 .recent-activity {
-	align-self: center;
+	@include align-self(center);
 }
 
 .new-members,
@@ -519,7 +518,7 @@
 
 .page-title-div {
 	width: 100px;
-	align-items: center;
+	@include align-items(center);
 }
 
 .page-title-div h1 {
@@ -531,9 +530,9 @@
 	}
 
 .other-charts-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(space-between);
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
@@ -550,8 +549,8 @@
 
 @media (min-width:320px) and (max-width:426px) {
 	.container {
-	display: flex;
-	flex-direction: column;
+	@include flexbox;
+	@include flex-direction(column);
 }
 
 .page-title-div {
@@ -559,9 +558,9 @@
 	}
 
 .other-charts-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	@include flexbox;
+	@include flex-direction(column);
+	@include justify-content(space-between);
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1060px;
