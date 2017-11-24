@@ -1,3 +1,5 @@
+//***** NAV ITEMS HEADERBAR *****/
+
 .header-nav-list {
 	@include flexbox;
 }
@@ -5,6 +7,7 @@
 .header-nav-notification {
 	@include flexbox;
 	@include align-items(center);
+    position:relative;
 	margin-right: 20px;
 }
 
@@ -21,82 +24,81 @@
 	border-left: 1px solid $grey;
 }
 
-// Notification menu
+//***** NOTIFICATION MENU *****
 
-.header-nav-notification {
-	position:relative;
-    @include flexbox;
-}
+
 
 /* THE RED NOTIFICATIONS COUNTER. */
     
  #noti_Counter {
-    display:block;
-    position:absolute;
-    background:$red;
-    color:#FFF;
-    font-size:12px;
-    font-weight:normal;
-    padding:1px 3px;
-    margin:10px 0 0 15px;
-    border-radius:50%;
-    -moz-border-radius:50%; 
-    -webkit-border-radius:50%;
-    z-index:1;
+    display: block;
+    position: absolute;
+    background: $red;
+    color: $white;
+    font-size: 12px;
+    font-weight: $font-weight--regular;
+    padding: 1px 3px;
+    margin: 10px 0 0 15px;
+    border-radius: 50%;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%;
+    z-index: 1;
 }
 
- /* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+ /* THE NOTIFICAIONS WINDOW. */
    
 #notifications {
-    display:none;
-    width:230px;
-    position:absolute;
-    top:50px;
-    left:-150px;
+    display: none;
+    width: 230px;
+    position: absolute;
+    top: 50px;
+    left: -150px;
     background: $ultra-light-grey;
     border:solid 1px rgba(100, 100, 100, .20);
     -webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .20);
     z-index: 1;
-}
 
-/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
-
-#notifications:before {         
-    content: '';
-    display:block;
-    width:0;
-    height:0;
-    color:transparent;
-    border:10px solid #CCC;
-    border-color:transparent transparent $red;
-    margin-top:-20px;
-    margin-left:150px;
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        color: transparent;
+        border: 10px solid $grey;
+        border-color: transparent transparent $red;
+        margin-top: -20px;
+        margin-left: 150px;
+    }
 }
 
 .noti-heading {
-    display:block;
+    display: block;
     color: $white; 
-    background:$red;
-    font-weight:bold;
-    font-size:14px;    
-    padding:8px;
-    margin:-1px;
-    border-bottom:solid 1px rgba(100, 100, 100, .30);
+    background: $red;
+    font-weight: $font-weight--bold;
+    font-size: 14px;    
+    padding: 8px;
+    margin: -1px;
+    border-bottom: solid 1px rgba(100, 100, 100, .30);
 
 }
+
+/* THE NOTIFICAIONS. */
+
 
 .noti1,
 .noti2 {
     color: $black;
     padding: 10px 30px 10px 10px;
-    cursor: pointer;   
+    cursor: pointer;
+
+    &:hover,
+    &:hover {
+        color: $red;
+        transition: 0.4s ease-in;
+    }   
 }
 
-.noti1:hover,
-.noti2:hover {
-    color: $red;
-    transition: 0.4s ease-in;
-} 
 
 .noti-sep {
     border-top: solid 1px rgba(100, 100, 100, .30);
@@ -124,14 +126,13 @@
  {
     @include flexbox;
     @include justify-content(space-between);
-}
 
-.noti-rule1:hover,
-.noti-rule2:hover {
-    background: $white;
-    transition: 0.4s ease-in;
+    &:hover,
+    &:hover {
+        background: $white;
+        transition: 0.4s ease-in;  
+    }
 }
-
 
 .fa-times {
     @include align-self(center);
@@ -139,11 +140,11 @@
     font-size: 24px; 
     padding-right: 20px;
     cursor: pointer;
-}
 
-.fa-times:hover {
-    color: $red;
-    transition: 0.4s ease-in;
+    &:hover {
+        color: $red;
+        transition: 0.4s ease-in;
+    }
 }
 
 

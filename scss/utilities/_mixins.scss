@@ -40,3 +40,20 @@
 @mixin flex-basis($val) {
   flex-basis: $val;
 }  
+
+
+//=========
+// Grid
+//=========
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin grid-row($val) {
+  grid-row: $val; 
+};
+
+@mixin grid-column($val) {
+  grid-column: $val; 
+};

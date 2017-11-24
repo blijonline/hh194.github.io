@@ -70,7 +70,7 @@ svg:hover .hover {
  }
  .icon-container {
  	@include flexbox;
- 	flex-grow: 1;
+ 	@include flex(1);
  }
 
 .dashboard-icon,
@@ -83,6 +83,5 @@ svg:hover .hover {
 
 .current {
 	border-top: solid 1px $white;
-
 	}
 }
