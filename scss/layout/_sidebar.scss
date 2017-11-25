@@ -6,20 +6,7 @@
 .icon-div {
 	@include flexbox;
 	@include justify-content(center);
-	cursor: pointer;
-}
-
-.dashboard-icon,
-.members-icon,
-.visits-icon,
-.settings-icon {
-	@include align-self(center);
-	width: 40%;
-}
-
-svg:hover .hover {
-	fill: $black;
-	transition: 0.4s ease-in;
+	@extend %cursor-pointer;
 }
 
 

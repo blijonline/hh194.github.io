@@ -1,5 +1,8 @@
     $(document).ready(function () {
 
+
+// ************ NOTIFICATION-MENU **********
+
         // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
         $('#noti_Counter')
             .css({ opacity: 0 })
@@ -39,14 +42,6 @@
             $('.noti-sep').remove();
         });
 
-        // add border on active tab sidebar   
-
-        $('.icon-div').on('click', function(){
-            $('div.current').removeClass('current');
-            $(this).addClass('current');
-        });
-
-
         $('.count').each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -57,9 +52,19 @@
             $(this).text(Math.ceil(now));
         }
     });
+
+// ************ SIDEBAR **********
+
+        // add border on active tab sidebar   
+
+        $('.icon-div').on('click', function(){
+            $('div.current').removeClass('current');
+            $(this).addClass('current');
+        });
+
 });
 
-        // autocomplete function for searching members
+// ********** autocomplete function for searching members *********
 
 var input = document.getElementById("search-user");
 new Awesomplete(input, {

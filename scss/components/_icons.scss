@@ -1,6 +1,21 @@
+// Notification icon
+
 #noti-bell {
+	@extend %cursor-pointer;
+	@extend %no-outline;
 	height: 25px;
-	cursor: pointer;
-	outline: 0;
 	position: relative;
+}
+
+.dashboard-icon,
+.members-icon,
+.visits-icon,
+.settings-icon {
+	@include align-self(center);
+	width: 40%;
+}
+
+svg:hover .hover {
+	@extend %hover-transition;
+	fill: $black;
 }

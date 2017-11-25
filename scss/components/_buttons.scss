@@ -3,19 +3,19 @@
     @include justify-content(space-between);
     padding: 10px;
     background-color: $pomegranate;
-    color: white;
+    color: $white;
     margin: 15px auto;
     border-radius: 5px;
 }
 
 .closebtn {
     @include order(2);
+    @extend %cursor-pointer;
     margin-right: 5px;
     color: $white;
     font-weight: $font-weight--bold;
     font-size: 28px;
     line-height: 20px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -36,15 +36,15 @@
 }
 
 .btn {
+    @extend %cursor-pointer;
+    @extend %no-outline;
+    @extend %no-border;
     margin-right: 10px;
-    cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
     background: $black;
     color: $white;
     padding: 8px;
-    border: 0;
-    outline: 0;
 
     &:hover {
         color: $red;
@@ -68,9 +68,9 @@
 }
 
 .onoffswitch-label {
+    @extend %cursor-pointer;
     display: block; 
     overflow: hidden; 
-    cursor: pointer;
     border: 2px solid $white; 
     border-radius: 20px;
 }

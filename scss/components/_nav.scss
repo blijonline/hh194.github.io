@@ -94,8 +94,8 @@
 
     &:hover,
     &:hover {
+        @extend %hover-transition;
         color: $red;
-        transition: 0.4s ease-in;
     }   
 }
 
@@ -129,21 +129,21 @@
 
     &:hover,
     &:hover {
-        background: $white;
-        transition: 0.4s ease-in;  
+        @extend %hover-transition;
+        background: $white; 
     }
 }
 
 .fa-times {
     @include align-self(center);
+    @extend %cursor-pointer;
     color: $grey;
     font-size: 24px; 
     padding-right: 20px;
-    cursor: pointer;
 
     &:hover {
+        @extend %hover-transition;
         color: $red;
-        transition: 0.4s ease-in;
     }
 }
 
