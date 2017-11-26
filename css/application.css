@@ -1058,7 +1058,7 @@ svg:hover .hover {
   .new-members,
   .recent-activity {
     width: 100%; } }
-@media (min-width: 426px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .page-title-div {
     width: 100px;
     align-items: center; }
@@ -1082,7 +1082,7 @@ svg:hover .hover {
 
   .chart-area {
     width: 100%; } }
-@media (min-width: 320px) and (max-width: 426px) {
+@media (max-width: 425px) {
   .container {
     display: flex;
     flex-direction: column; }
@@ -1126,7 +1126,7 @@ svg:hover .hover {
 .app {
   font-weight: 300; }
 
-@media (min-width: 320px) and (max-width: 426px) {
+@media (max-width: 425px) {
   .logo a {
     font-size: 18px; } }
 .sidebar {
@@ -1147,11 +1147,12 @@ svg:hover .hover {
     display: flex;
     flex-direction: column;
     height: 300px;
+    min-width: 89px;
     justify-content: space-around; }
 
   .current {
     border-left: solid 2px #fff; } }
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 426px) {
   .sidebar {
     flex-direction: column;
     width: 60px; }
@@ -1165,7 +1166,7 @@ svg:hover .hover {
 
   .current {
     border-left: solid 2px #fff; } }
-@media (min-width: 320px) and (max-width: 426px) {
+@media (max-width: 425px) {
   .sidebar {
     height: 50px; }
 

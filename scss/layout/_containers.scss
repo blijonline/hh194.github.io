@@ -531,7 +531,7 @@
 	}
 }
  
-@media (min-width:426px) and (max-width:767px) {
+@media (max-width:767px) {
 
 .page-title-div {
 	width: 100px;
@@ -564,11 +564,12 @@
 	}
 }
 
-@media (min-width:320px) and (max-width:426px) {
+@media (max-width:425px) {
+	
 	.container {
 	@include flexbox;
 	@include flex-direction(column);
-}
+	}
 
 .page-title-div {
 	display: none;

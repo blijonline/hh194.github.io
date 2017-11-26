@@ -23,7 +23,8 @@
 .icon-container {
 	@include flexbox;
 	@include flex-direction(column);
-	height: 300px;
+	height: 300px; 
+	min-width: 89px;
 	@include justify-content(space-around);
 }
 
@@ -32,7 +33,7 @@
 	}
 }
 
-@media (min-width:426px) and (max-width:767px) {
+@media (min-width:426px) {
  .sidebar {
  	@include flex-direction(column);
  	width: 60px;
@@ -51,8 +52,9 @@
 	}
 }
 
-@media (min-width:320px) and (max-width:426px) {
+@media (max-width:425px) {
  .sidebar {
+	
  	height: 50px;
  }
  .icon-container {
