@@ -430,6 +430,9 @@ a {
 .closebtn:hover {
   color: #0b0b0b; }
 
+.line-chart-container h3 {
+  margin-top: 0; }
+
 .line-chart-heading {
   display: flex;
   justify-content: space-between;
@@ -442,10 +445,10 @@ a {
 .btn {
   margin-right: 10px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12px;
   background: #0b0b0b;
   color: #fff;
-  padding: 8px; }
+  padding: 6px; }
   .btn:hover {
     color: #D91420;
     transition: 0.3s ease-in; }
@@ -517,13 +520,10 @@ a {
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px; }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 425px) {
   .btn {
-    font-size: 12px;
-    padding: 6px; }
-
-  .line-chart-container h3 {
-    margin-top: 0; } }
+    font-size: 14px;
+    padding: 8px; } }
 .line-chart-container, .other-charts-container, .social-stats-heading, .social-stats-container {
   width: 90%;
   margin: 0 auto;
@@ -576,9 +576,7 @@ svg:hover .hover {
   margin-right: 20px; }
 
 .header-nav-name {
-  display: flex;
-  align-items: center;
-  margin-right: 20px; }
+  display: none; }
 
 .header-nav-userpicture {
   height: 35px;
@@ -677,9 +675,11 @@ svg:hover .hover {
   .fa-times:hover {
     color: #D91420; }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 425px) {
   .header-nav-name {
-    display: none; } }
+    display: flex;
+    align-items: center;
+    margin-right: 20px; } }
 .container {
   display: flex; }
 

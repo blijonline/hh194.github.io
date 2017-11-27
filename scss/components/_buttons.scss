@@ -23,6 +23,11 @@
     color: $black;
 }
 
+.line-chart-container h3 {
+        margin-top: 0;
+}
+
+
 .line-chart-heading {
     @include flexbox;
     @include justify-content(space-between);
@@ -41,10 +46,10 @@
     @extend %no-border;
     margin-right: 10px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 12px;
     background: $black;
     color: $white;
-    padding: 8px;
+    padding: 6px;
 
     &:hover {
         color: $red;
@@ -139,13 +144,9 @@
 
 // ******** Media Queries ********** //
 
-@media (min-width:320px) and (max-width:425px) {
+@media (min-width:425px) {
     .btn {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .line-chart-container h3 {
-        margin-top: 0;
+        font-size: 14px;
+        padding: 8px;
     }
 }
