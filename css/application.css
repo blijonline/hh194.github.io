@@ -681,7 +681,7 @@ svg:hover .hover {
     align-items: center;
     margin-right: 20px; } }
 .container {
-  display: flex; }
+  flex-direction: column; }
 
 .main-content {
   display: flex;
@@ -694,11 +694,10 @@ svg:hover .hover {
   justify-content: space-between; }
 
 .page-title-div {
-  display: flex;
+  display: none;
   justify-content: center;
   width: 155px;
-  height: 65px;
-  color: #b2b2b2; }
+  height: 65px; }
 
 .searchbar-div {
   display: flex;
@@ -969,9 +968,6 @@ svg:hover .hover {
   .cancel-btn:hover {
     background: #0b0b0b; }
 
-@media (max-width: 1050px) {
-  .count {
-    font-size: 46px; } }
 @media (max-width: 945px) {
   .user-content {
     display: grid;
@@ -1017,18 +1013,6 @@ svg:hover .hover {
   .save-btn,
   .cancel-btn {
     margin-bottom: 0; } }
-@media (max-width: 989px) {
-  .sm-title {
-    font-size: 16px; }
-
-  .count {
-    font-size: 38px; } }
-@media (max-width: 909px) {
-  .sm-title {
-    font-size: 16px; }
-
-  .count {
-    font-size: 32px; } }
 @media (max-width: 767px) {
   .social-stats-container {
     display: flex;
@@ -1040,9 +1024,6 @@ svg:hover .hover {
   .google-plus-container {
     display: flex;
     width: 65%; }
-
-  .count {
-    font-size: 38px; }
 
   .members-area {
     flex-direction: column; }
@@ -1057,8 +1038,8 @@ svg:hover .hover {
 
   .new-members,
   .recent-activity {
-    width: 100%; } }
-@media (max-width: 767px) {
+    width: 100%; }
+
   .page-title-div {
     width: 100px;
     align-items: center; }
@@ -1077,18 +1058,16 @@ svg:hover .hover {
     margin: 0 auto;
     max-width: 1060px; }
 
-  .sm-title {
-    color: #D91420; }
-
   .chart-area {
     width: 100%; } }
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: row; }
 
   .page-title-div {
-    display: none; }
+    display: flex;
+    color: #b2b2b2; }
 
   .other-charts-container {
     display: flex;
@@ -1102,7 +1081,7 @@ svg:hover .hover {
     width: 100%; }
 
   .count {
-    font-size: 34px; } }
+    font-size: 46px; } }
 .header {
   display: flex;
   justify-content: space-between;

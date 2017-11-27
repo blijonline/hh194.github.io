@@ -1,7 +1,7 @@
 // *********** main containers ************* //
 
 .container {
-	@include flexbox;
+	@include flex-direction(column);
 }
 
 .main-content {
@@ -19,11 +19,10 @@
 }
 
 .page-title-div {
-	@include flexbox;
+	display: none;
 	@include justify-content(center);
 	width: 155px;
 	height: 65px;
-	color: $grey;
 }
 
 // *********** searchbar container ********** //
@@ -405,12 +404,6 @@
 // ***************  Media Queries **************
 
 
-@media (max-width: 1050px) {
-	.count {
-	font-size: 46px
-	}
-}
-
 @media (max-width: 945px) {
 	
 	.user-content {
@@ -468,31 +461,10 @@
 
 }
 
-@media (max-width: 989px) {
-	
-    .sm-title {
-    	font-size: 16px;
-    }
 
-	.count {
-		font-size: 38px
-	}
+ 
+@media (max-width:767px) {
 
-}
-
-@media (max-width: 909px) {
-	
-    .sm-title {
-    	font-size: 16px;
-    }
-
-	.count {
-		font-size: 32px
-	}
-}
-
-
-@media (max-width: 767px) {
 
 .social-stats-container {
 	@include flexbox;
@@ -507,9 +479,6 @@
 	width: 65%;
 	}
 
-.count {
-		font-size: 38px
-	}
 
 .members-area {
 	@include flex-direction(column);
@@ -529,9 +498,6 @@
 .recent-activity {
 	width: 100%;
 	}
-}
- 
-@media (max-width:767px) {
 
 .page-title-div {
 	width: 100px;
@@ -555,24 +521,21 @@
 	max-width: 1060px;
 	}
 
-.sm-title {
-	color: $red;
-}
-
 .chart-area {
 	width: 100%;
 	}
 }
 
-@media (max-width:425px) {
+@media (min-width:425px) {
 	
-	.container {
+.container {
 	@include flexbox;
-	@include flex-direction(column);
-	}
+	@include flex-direction(row);
+}
 
 .page-title-div {
-	display: none;
+	@include flexbox;
+	color: $grey;
 	}
 
 .other-charts-container {
@@ -589,7 +552,7 @@
 	}
 
 	.count {
-		font-size: 34px
+		font-size: 46px
 	}
 
 }
