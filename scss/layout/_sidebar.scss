@@ -1,6 +1,25 @@
 .sidebar {
 	@include flexbox;
+	@include flex-direction(column);
 	background: $red;
+	
+
+	@include mq(small) {
+		@include flex-direction(row);
+		width: 60px;
+	} 
+
+	@include mq(medium) {
+		@include flex-direction(row);
+		min-width: 80px;
+		max-width: 80px;
+	} 
+
+	@include mq(large) {
+		min-width: 89px;
+		max-width: 89px;
+	} 
+
 }
 
 .icon-div {
@@ -14,11 +33,6 @@
 
 @media (min-width:768px) {
 
-.sidebar {
-	@include flex-direction(column);
-	min-width: 89px;
-	max-width: 89px;
-}
 
 .icon-container {
 	@include flexbox;
@@ -34,10 +48,7 @@
 }
 
 @media (min-width:426px) {
- .sidebar {
- 	@include flex-direction(column);
- 	width: 60px;
- }
+
 
 .icon-container {
 	@include flexbox;

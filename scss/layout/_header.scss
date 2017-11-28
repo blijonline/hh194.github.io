@@ -10,8 +10,12 @@
 .logo a {
 	text-decoration: none;
 	color: $white;
-	font-size: 24px;
+	font-size: 18px;
 	margin-left: 20px;
+
+	@include mq(small) {
+		font-size: 24px;
+	}
 
 	&:hover {
 		color: $red;
@@ -25,12 +29,4 @@
 
 .app {
 	font-weight: $font-weight--light;
-}
-
-// ***************  Media Queries **************
-
-@media (max-width:425px) {
- .logo a {
- 	font-size: 18px;
- }
 }

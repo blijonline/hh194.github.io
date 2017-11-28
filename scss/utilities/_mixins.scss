@@ -59,7 +59,7 @@
 };
 
 @mixin grid-template-rows($val) {
-  grid-column-template-rows: $val; 
+  grid-template-rows: $val; 
 };
 
 @mixin grid-column-start($val) {
