@@ -13,6 +13,13 @@
 
 .header-nav-name {
     display: none;
+
+    @include mq(small) {
+    @include flexbox;
+    @include align-items(center);
+    margin-right: 20px;
+} 
+
 }
 
 .header-nav-userpicture {
@@ -142,17 +149,5 @@
     &:hover {
         @extend %hover-transition;
         color: $red;
-    }
-}
-
-
-// ***************  Media Queries **************
-
-
-@media (min-width:425px) {
-    .header-nav-name {
-        @include flexbox;
-        @include align-items(center);
-        margin-right: 20px;
     }
 }

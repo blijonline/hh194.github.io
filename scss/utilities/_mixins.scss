@@ -74,5 +74,29 @@
   grid-auto-columns: $val; 
 };
 
+//=========
+// Media Queries
+//=========
 
+@mixin mq($break) {
 
+  @if $break == "small" {
+    @media (min-width: $brkpoint--sm +1) {
+        @content;
+      }
+  } @else if $break == "medium" {
+    @media (min-width: $brkpoint--md + 1) {
+        @content;
+      }
+  } @else if $break == "large" {
+    @media (min-width: $brkpoint--lg) {
+      @content;
+      }
+  } @else if $break == "x-large" {
+    @media (min-width: $brkpoint--x-lg) {
+      @content;
+      } 
+  } @else {
+    @error "`#{$break}` is not an acceptable value. Must be 'small' 'medium' 'large' or 'x-large'. "
+  }
+}

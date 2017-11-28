@@ -50,6 +50,11 @@
     background: $black;
     color: $white;
     padding: 6px;
+    
+    @include mq(small) {
+        font-size: 14px;
+        padding: 8px;
+    } 
 
     &:hover {
         color: $red;
@@ -139,14 +144,4 @@
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
-}
-
-
-// ******** Media Queries ********** //
-
-@media (min-width:425px) {
-    .btn {
-        font-size: 14px;
-        padding: 8px;
-    }
 }
