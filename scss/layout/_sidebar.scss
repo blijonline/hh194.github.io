@@ -2,7 +2,7 @@
 	@include flexbox;
 	@include flex-direction(column);
 	background: $red;
-	
+	min-height: 50px;
 
 	@include mq(small) {
 		@include flex-direction(row);
@@ -22,56 +22,36 @@
 
 }
 
+.icon-container {
+	@include flexbox;
+	@include flex(1);
+
+	@include mq(small) {
+		@include flex-direction(column);
+		height: 300px; 
+		min-width: 60px;
+		@include justify-content(space-around);
+	}
+
+	@include mq(medium) { 
+		min-width: 100%;
+	}
+}
+
 .icon-div {
 	@include flexbox;
 	@include justify-content(center);
 	@extend %cursor-pointer;
 }
 
-
-// ***************  Media Queries **************
-
-@media (min-width:768px) {
-
-
-.icon-container {
-	@include flexbox;
-	@include flex-direction(column);
-	height: 300px; 
-	min-width: 89px;
-	@include justify-content(space-around);
-}
-
 .current {
-	border-left: solid 2px $white;
+	border-top: solid 1px $white;
+
+	@include mq(small) {
+		border-left: solid 2px $white;
+		border-top: 0;
 	}
 }
-
-@media (min-width:426px) {
-
-
-.icon-container {
-	@include flexbox;
-	@include flex-direction(column);
-	height: 300px;
-	width: 60px;
-	@include justify-content(space-around);
-}
-
-.current {
-	border-left: solid 2px $white;
-	}
-}
-
-@media (max-width:425px) {
- .sidebar {
-	
- 	height: 50px;
- }
- .icon-container {
- 	@include flexbox;
- 	@include flex(1);
- }
 
 .dashboard-icon,
 .members-icon,
@@ -79,9 +59,4 @@
 .settings-icon {
 	@include align-self(center);
 	height: 40%;
-}
-
-.current {
-	border-top: solid 1px $white;
-	}
 }

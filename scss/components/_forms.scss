@@ -5,3 +5,14 @@
 	background-color: $red !important;
 	color: $white;
 }
+
+// ****** Form comfirmation message ****** //
+
+
+#form-comfirm {
+	position: fixed;
+	top: 25vh;
+	background: $white;
+	border: 2px sol
+	z-index: 200;
+}
