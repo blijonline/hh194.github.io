@@ -23,6 +23,17 @@
     color: $black;
 }
 
+.fc-closebtn {
+    @include flexbox;
+    @include justify-content(flex-end);
+    @extend %cursor-pointer;
+    margin: 5px; 
+    font-weight: $font-weight--bold;
+    font-size: 38px;
+    line-height: 20px;
+    transition: 0.3s;
+}
+
 .line-chart-container h3 {
         margin-top: 0;
 }

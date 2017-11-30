@@ -1,93 +1,1180 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
 /*
-Error: Invalid CSS after "	z-index": expected ";", was ": 200;"
-        on line 17 of scss/components/_forms.scss
-        from line 16 of scss/components/_index.scss
-        from line 16 of scss/application.scss
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
 
-12: #form-comfirm {
-13: 	position: fixed;
-14: 	top: 25vh;
-15: 	background: $white;
-16: 	border: 2px sol
-17: 	z-index: 200;
-18: }
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
 
-Backtrace:
-scss/components/_forms.scss:17
-scss/components/_index.scss:16
-scss/application.scss:16
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:804:in `block in try_declaration'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:678:in `block'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `map'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	z-index\": expected \";\", was \": 200;\"\A         on line 17 of scss/components/_forms.scss\A         from line 16 of scss/components/_index.scss\A         from line 16 of scss/application.scss\A \A 12: #form-comfirm {\A 13: 	position: fixed;\A 14: 	top: 25vh;\A 15: 	background: $white;\A 16: 	border: 2px sol\A 17: 	z-index: 200;\A 18: }"; }
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+h1 {
+  font-size: 24px; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #D91420; }
+  a:hover {
+    color: #0b0b0b; }
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #F44336;
+  color: #fff;
+  margin: 15px auto;
+  border-radius: 5px; }
+
+.closebtn {
+  order: 2;
+  margin-right: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 20px;
+  transition: 0.3s; }
+
+.closebtn:hover {
+  color: #0b0b0b; }
+
+.fc-closebtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 20px;
+  transition: 0.3s; }
+
+.line-chart-container h3 {
+  margin-top: 0; }
+
+.line-chart-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.line-chart-buttons {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn {
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  background: #0b0b0b;
+  color: #fff;
+  padding: 6px; }
+  @media (min-width: 426px) {
+    .btn {
+      font-size: 14px;
+      padding: 8px; } }
+  .btn:hover {
+    color: #D91420;
+    transition: 0.3s ease-in; }
+
+.onoffswitch {
+  position: relative;
+  min-width: 90px;
+  max-width: 90px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.onoffswitch-checkbox {
+  display: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 20px; }
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: 700;
+  box-sizing: border-box; }
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s; }
+  .onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #D91420;
+    color: #fff; }
+  .onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #0b0b0b;
+    color: #b2b2b2;
+    text-align: right; }
+
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; }
+
+.line-chart-container, .other-charts-container, .social-stats-heading, .social-stats-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1060px; }
+
+.closebtn, .fc-closebtn, .btn, .onoffswitch-label, #noti-bell, .fa-times, .fa-angle-right, .message-user-area button, .save-btn, .cancel-btn, .icon-div {
+  cursor: pointer; }
+
+a:hover, svg:hover .hover, .noti1:hover,
+.noti2:hover, .noti-rule1:hover,
+.noti-rule2:hover, .fa-times:hover, .fa-angle-right:hover, .message-user-area button:hover, .save-btn:hover, .cancel-btn:hover {
+  transition: 0.4s ease-in; }
+
+.btn, #noti-bell, #searchbar, .message-user-area input,
+.message-user-area textarea, .settings-area h3,
+.settings-area p,
+.settings-area select, .settings-area button {
+  outline: 0; }
+
+.btn, .user-act:last-of-type, .message-user-area button, .save-btn,
+.cancel-btn {
+  border: 0; }
+
+.awesomplete mark {
+  background: #D91420 !important;
+  background-color: #D91420 !important;
+  color: #fff; }
+
+#overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  background: rgba(11, 11, 11, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#form-confirm {
+  margin: auto;
+  width: 500px;
+  height: 250px;
+  background: #fff;
+  border: 2px solid #D91420;
+  border-radius: 5px;
+  z-index: 3; }
+
+#noti-bell {
+  height: 25px;
+  position: relative; }
+
+.dashboard-icon,
+.members-icon,
+.visits-icon,
+.settings-icon {
+  align-self: center;
+  width: 40%; }
+
+svg:hover .hover {
+  fill: #0b0b0b; }
+
+.header-nav-list {
+  display: flex; }
+
+.header-nav-notification {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 20px; }
+
+.header-nav-name {
+  display: none; }
+  @media (min-width: 426px) {
+    .header-nav-name {
+      display: flex;
+      align-items: center;
+      margin-right: 20px; } }
+
+.header-nav-userpicture {
+  height: 35px;
+  margin-right: 20px;
+  padding-left: 10px;
+  border-left: 1px solid #b2b2b2; }
+
+/* THE RED NOTIFICATIONS COUNTER. */
+#noti_Counter {
+  display: block;
+  position: absolute;
+  background: #D91420;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 1px 3px;
+  margin: 10px 0 0 15px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  z-index: 1; }
+
+/* THE NOTIFICAIONS WINDOW. */
+#notifications {
+  display: none;
+  width: 230px;
+  position: absolute;
+  top: 50px;
+  left: -150px;
+  background: #fbfbfb;
+  border: solid 1px rgba(100, 100, 100, 0.2);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+  #notifications:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid #b2b2b2;
+    border-color: transparent transparent #D91420;
+    margin-top: -20px;
+    margin-left: 150px; }
+
+.noti-heading {
+  display: block;
+  color: #fff;
+  background: #D91420;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px;
+  margin: -1px;
+  border-bottom: solid 1px rgba(100, 100, 100, 0.3); }
+
+/* THE NOTIFICAIONS. */
+.noti1,
+.noti2 {
+  color: #0b0b0b;
+  padding: 10px 30px 10px 10px;
+  cursor: pointer; }
+  .noti1:hover, .noti1:hover,
+  .noti2:hover,
+  .noti2:hover {
+    color: #D91420; }
+
+.noti-sep {
+  border-top: solid 1px rgba(100, 100, 100, 0.3);
+  width: 90%;
+  margin: auto; }
+
+.noti-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold; }
+
+.noti-rule1 {
+  padding-bottom: 5px; }
+
+.noti-rule2 {
+  padding-top: 5px; }
+
+.noti-rule1,
+.noti-rule2 {
+  display: flex;
+  justify-content: space-between; }
+  .noti-rule1:hover, .noti-rule1:hover,
+  .noti-rule2:hover,
+  .noti-rule2:hover {
+    background: #fff; }
+
+.fa-times {
+  align-self: center;
+  color: #b2b2b2;
+  font-size: 24px;
+  padding-right: 20px; }
+  .fa-times:hover {
+    color: #D91420; }
+
+.container {
+  flex-direction: column; }
+  @media (min-width: 426px) {
+    .container {
+      display: flex;
+      flex-direction: row; } }
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 3%; }
+
+.title-area {
+  display: flex;
+  justify-content: space-between; }
+
+.page-title-div {
+  display: none; }
+  @media (min-width: 426px) {
+    .page-title-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px; } }
+  @media (min-width: 769px) {
+    .page-title-div {
+      width: 155px;
+      height: 65px; } }
+
+.page-title-div h1 {
+  font-size: 18px; }
+  @media (min-width: 769px) {
+    .page-title-div h1 {
+      font-size: 24px; } }
+
+.searchbar-div {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+  height: 65px;
+  border-left: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  background: #fbfbfb; }
+
+.searchbar-div .fa-search {
+  position: absolute;
+  top: 24px;
+  right: 55px;
+  font-size: 15px; }
+
+#searchbar {
+  display: flex;
+  align-self: center;
+  flex: 1;
+  max-width: 382px;
+  font-size: 14px;
+  height: 40px;
+  margin: 0 25px;
+  padding-left: 18px;
+  border-radius: 5px;
+  border: solid 1px #dfdfdf; }
+  @media (min-width: 769px) {
+    #searchbar {
+      font-size: 16px; } }
+
+.alert-container {
+  max-width: 1060px;
+  width: 90%;
+  margin: 20px auto; }
+
+.other-charts-container {
+  justify-content: space-between; }
+  @media (min-width: 769px) {
+    .other-charts-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1060px; } }
+
+.chart-area {
+  width: 100%;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 30px; }
+  @media (min-width: 769px) {
+    .chart-area {
+      width: 50%; } }
+
+.line-chart-container {
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 30px; }
+
+.social-stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dfdfdf; }
+  @media (min-width: 769px) {
+    .social-stats-container {
+      flex-direction: row; } }
+
+.social-stats-container img {
+  align-self: center;
+  height: 40px; }
+
+.twitter-container,
+.facebook-container,
+.google-plus-container {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 120px;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  background: #fbfbfb;
+  margin-top: 20px; }
+  @media (min-width: 769px) {
+    .twitter-container,
+    .facebook-container,
+    .google-plus-container {
+      display: flex;
+      width: 30%; } }
+
+.circle {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  background-color: #D91420;
+  margin-left: 22px;
+  z-index: 1; }
+  @media (min-width: 426px) {
+    .circle {
+      width: 60px;
+      height: 60px;
+      margin-left: 10px; } }
+  @media (min-width: 1024px) {
+    .circle {
+      width: 70px;
+      height: 70px; } }
+
+.visiters {
+  margin-left: 5%; }
+
+.count {
+  font-size: 42px; }
+  @media (min-width: 769px) {
+    .count {
+      font-size: 38px; } }
+  @media (min-width: 1024px) {
+    .count {
+      font-size: 52px; } }
+
+.sm-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #D91420;
+  margin: 0;
+  margin-bottom: -10%; }
+
+.new-members {
+  align-self: center;
+  border-bottom: 1px solid #dfdfdf; }
+
+.new-members,
+.recent-activity {
+  width: 100%; }
+
+.user-act {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #dfdfdf; }
+
+.user {
+  display: flex;
+  align-items: center; }
+
+.pf-img img {
+  width: 40px; }
+
+.pf-txt {
+  margin-left: 3%; }
+
+.pf-txt p {
+  margin: 0; }
+
+.pf-txt a {
+  font-size: 13px; }
+
+.recent-activity {
+  margin-left: 3%; }
+
+.ra-txt {
+  margin-left: 3%;
+  font-size: 13px; }
+
+.ra-txt p {
+  margin: 0; }
+
+.fa-angle-right {
+  font-size: 28px;
+  color: #D91420; }
+  .fa-angle-right:hover {
+    color: #0b0b0b; }
+
+.date {
+  font-size: 12px; }
+
+.name {
+  display: flex;
+  align-items: center; }
+
+.user-content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-columns: 100%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1060px; }
+  @media (min-width: 769px) {
+    .user-content {
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-columns: 50%;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1060px; } }
+
+.new-members-area {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+  border-right: 0;
+  padding: 0; }
+  @media (min-width: 769px) {
+    .new-members-area {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 1;
+      border-right: 1px solid #dfdfdf;
+      padding-right: 5%; } }
+
+.recent-activity-area {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 2;
+  align-self: center;
+  padding: 0; }
+  @media (min-width: 769px) {
+    .recent-activity-area {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 1;
+      padding-left: 5%; } }
+
+.message-user-area {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 3;
+  border-right: 0;
+  padding: 0; }
+  @media (min-width: 769px) {
+    .message-user-area {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row: 2;
+      border-right: 1px solid #dfdfdf;
+      border-top: 1px solid #dfdfdf;
+      padding-right: 5%; } }
+
+.awesomplete {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.awesomplete ul {
+  margin-top: 20px;
+  padding: 5px; }
+
+#myinput {
+  flex: 1; }
+
+.message-user-area input,
+.message-user-area textarea {
+  margin-bottom: 3%;
+  border-radius: 5px;
+  padding: 10px; }
+
+.message-user-area input,
+.message-user-area textarea {
+  border: 1px solid #dfdfdf;
+  background: #fbfbfb;
+  color: #b2b2b2; }
+
+.message-user-area textarea {
+  flex: 1; }
+
+.message-user-area form {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+.message-user-area button {
+  border-radius: 5px;
+  padding: 10px;
+  background: #F44336;
+  color: #fff; }
+  .message-user-area button:hover {
+    background: #D91420; }
+
+.send-btn,
+.save-btn,
+.cancel-btn {
+  margin-bottom: 0%; }
+  @media (min-width: 1024px) {
+    .send-btn,
+    .save-btn,
+    .cancel-btn {
+      margin-bottom: 5%; } }
+
+.settings-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 4;
+  padding: 0;
+  border-top: 1px solid #dfdfdf; }
+  @media (min-width: 769px) {
+    .settings-area {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row: 2;
+      padding-left: 5%; } }
+
+.set-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%; }
+
+.settings-area select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  background: #fbfbfb;
+  color: #b2b2b2; }
+
+.settings-area form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  margin-bottom: 3%; }
+
+.settings-area button {
+  flex: 1; }
+
+.buttons {
+  display: flex;
+  justify-content: space-between; }
+
+.save-btn,
+.cancel-btn {
+  align-self: flex-end;
+  padding: 10px;
+  border-radius: 5px; }
+
+.save-btn {
+  margin-right: 3%;
+  background: #F44336;
+  color: #fff; }
+  .save-btn:hover {
+    background: #D91420; }
+
+.cancel-btn {
+  background: #b2b2b2;
+  color: #fff; }
+  .cancel-btn:hover {
+    background: #0b0b0b; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background: #0b0b0b;
+  color: #fff; }
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 20px; }
+  @media (min-width: 426px) {
+    .logo a {
+      font-size: 24px; } }
+  .logo a:hover {
+    color: #D91420;
+    transition: 0.2s ease-in; }
+
+.your {
+  font-weight: 800; }
+
+.app {
+  font-weight: 300; }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #D91420;
+  min-height: 50px; }
+  @media (min-width: 426px) {
+    .sidebar {
+      flex-direction: row;
+      width: 60px; } }
+  @media (min-width: 769px) {
+    .sidebar {
+      flex-direction: row;
+      min-width: 80px;
+      max-width: 80px; } }
+  @media (min-width: 1024px) {
+    .sidebar {
+      min-width: 89px;
+      max-width: 89px; } }
+
+.icon-container {
+  display: flex;
+  flex: 1; }
+  @media (min-width: 426px) {
+    .icon-container {
+      flex-direction: column;
+      height: 300px;
+      min-width: 60px;
+      justify-content: space-around; } }
+  @media (min-width: 769px) {
+    .icon-container {
+      min-width: 100%; } }
+
+.icon-div {
+  display: flex;
+  justify-content: center; }
+
+.current {
+  border-top: solid 1px #fff; }
+  @media (min-width: 426px) {
+    .current {
+      border-left: solid 2px #fff;
+      border-top: 0; } }
+
+.dashboard-icon,
+.members-icon,
+.visits-icon,
+.settings-icon {
+  align-self: center;
+  height: 40%; }
+
+/*# sourceMappingURL=application.css.map */
