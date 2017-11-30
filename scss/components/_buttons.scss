@@ -23,7 +23,7 @@
     color: $black;
 }
 
-.fc-closebtn {
+#fc-closeX {
     @include flexbox;
     @include justify-content(flex-end);
     @extend %cursor-pointer;

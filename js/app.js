@@ -72,3 +72,13 @@ new Awesomplete(input, {
 });
 
     });
+
+// ********** Form conformation message ************//
+
+const confirmCloseX = document.getElementById('fc-closeX');
+
+confirmCloseX.addEventListener('click', () => {
+    document.getElementById('overlay').remove();
+    document.getElementById('form-confirm').remove();
+})
+

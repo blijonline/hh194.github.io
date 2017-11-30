@@ -430,7 +430,7 @@ a {
 .closebtn:hover {
   color: #0b0b0b; }
 
-.fc-closebtn {
+#fc-closeX {
   display: flex;
   justify-content: flex-end;
   margin: 5px;
@@ -538,7 +538,7 @@ a {
   margin: 0 auto;
   max-width: 1060px; }
 
-.closebtn, .fc-closebtn, .btn, .onoffswitch-label, #noti-bell, .fa-times, .fa-angle-right, .message-user-area button, .save-btn, .cancel-btn, .icon-div {
+.closebtn, #fc-closeX, .btn, .onoffswitch-label, #noti-bell, .fa-times, .fa-angle-right, .message-user-area button, .save-btn, .cancel-btn, .icon-div {
   cursor: pointer; }
 
 a:hover, svg:hover .hover, .noti1:hover,
@@ -576,7 +576,18 @@ a:hover, svg:hover .hover, .noti1:hover,
   margin: auto;
   width: 500px;
   height: 250px;
-  background: #fff;
+  color: #fff;
+  background: #78CF82;
+  border: 2px solid #b2b2b2;
+  border-radius: 5px;
+  z-index: 3; }
+
+#form-confirm-error {
+  margin: auto;
+  width: 500px;
+  height: 250px;
+  color: #fff;
+  background: #F44336;
   border: 2px solid #D91420;
   border-radius: 5px;
   z-index: 3; }
