@@ -75,10 +75,28 @@ new Awesomplete(input, {
 
 // ********** Form conformation message ************//
 
-const confirmCloseX = document.getElementById('fc-closeX');
 
-confirmCloseX.addEventListener('click', () => {
-    document.getElementById('overlay').remove();
-    document.getElementById('form-confirm').remove();
-})
+const sendBtn = document.getElementById("send-btn");
 
+const users = [
+    "Victoria Chambers", "Dale Byrd", "Dawn Wood", "Dan Oliver", "Henri Huisman"
+]
+
+sendBtn.addEventListener('click', () => {
+    const userName = document.getElementById('search-user').value;
+    const textArea = document.getElementById('textarea').value;
+
+    if (users.indexOf(userName) > -1 && textArea != '') {
+        swal({
+          title: 'Message Sent',
+          text: 'Your message has been sent to ' + userName ,
+          type: 'success'
+        });
+    } else {
+        swal({
+          title: 'Fill in all fields!',
+          text: 'Please fill in all the fields Lazy Frog!' ,
+          type: 'error'
+        });
+    }
+});

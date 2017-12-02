@@ -1,9 +1,7 @@
 // *********** main containers ************* //
 
 .container {
-
 	@include flex-direction(column);
-
 	@include mq(small) {
 	@include flexbox;
 	@include flex-direction(row);
@@ -416,29 +414,6 @@
 	@include flex(1);
 }
 
-.message-user-area button {
-	@extend %cursor-pointer;
-	@extend %no-border;
-	border-radius: 5px;
-	padding: 10px;
-	background: $pomegranate;
-	color: $white;
-
-	&:hover {
-		@extend %hover-transition;
-		background: $red;
-	}
-}
-
-.send-btn,
-.save-btn,
-.cancel-btn {
-	margin-bottom: 0%;
-	@include mq(large) {
-		margin-bottom: 5%;
-	} 
-}
-
 
 // settings area
 
@@ -488,44 +463,4 @@
     @include justify-content(space-around);
     @include flex(1);
     margin-bottom: 3%; 
-}
-.settings-area button {
-	@include flex(1);
-	@extend %no-outline;
-}
-
-.buttons {
-	@include flexbox;
-	@include justify-content(space-between);
-}
-
-.save-btn,
-.cancel-btn {
-	@include align-self(flex-end);
-	@extend %no-border;
-	padding: 10px;
-	border-radius: 5px;
-}
-
-.save-btn {
-	@extend %cursor-pointer;
-	margin-right: 3%;
-	background: $pomegranate;
-	color: $white;
-
-	&:hover {
-		@extend %hover-transition;
-		background: $red;
-	}
-}
-
-.cancel-btn {
-	@extend %cursor-pointer;
-	background: $grey;
-	color: $white;
-
-	&:hover {
-		@extend %hover-transition;
-		background: $black;
-	}
 }

@@ -73,6 +73,78 @@
     }
 }
 
+
+// ******** message user send button ********** //
+
+
+.message-user-area button {
+    @extend %cursor-pointer;
+    @extend %no-border;
+    border-radius: 5px;
+    padding: 10px;
+    background: $pomegranate;
+    color: $white;
+
+    &:hover {
+        @extend %hover-transition;
+        background: $red;
+    }
+}
+
+// ******** settings button ********** //
+
+#send-btn,
+.save-btn,
+.cancel-btn {
+    @extend %no-outline;
+    margin-bottom: 0%;
+    @include mq(large) {
+        margin-bottom: 5%;
+    } 
+}
+
+.settings-area button {
+    @include flex(1);
+    @extend %no-outline;
+}
+
+.buttons {
+    @include flexbox;
+    @include justify-content(space-between);
+}
+
+.save-btn,
+.cancel-btn {
+    @include align-self(flex-end);
+    @extend %no-border;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.save-btn {
+    @extend %cursor-pointer;
+    margin-right: 3%;
+    background: $pomegranate;
+    color: $white;
+
+    &:hover {
+        @extend %hover-transition;
+        background: $red;
+    }
+}
+
+.cancel-btn {
+    @extend %cursor-pointer;
+    background: $grey;
+    color: $white;
+
+    &:hover {
+        @extend %hover-transition;
+        background: $black;
+    }
+}
+
+
 // ******** ON/OFF Switches ********** //
 
 .onoffswitch {
@@ -155,4 +227,9 @@
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
+}
+
+.swal2-confirm {
+    background: $red !important;
+    border: 0;
 }
