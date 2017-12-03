@@ -24,7 +24,7 @@
 }
 
 .page-title-div {
-	display: none;
+	@include display(none);
 	
 	@include mq(small) {
 		@include flexbox;
@@ -54,7 +54,7 @@
 	@include flexbox;
 	@include justify-content(flex-end);
 	@include flex(1);
-	position: relative;
+	@include position(relative);
 	height: 65px;
 	border-left: 1px solid $light-grey;
 	border-bottom: 1px solid $light-grey;
@@ -62,7 +62,7 @@
 }
 
 .searchbar-div .fa-search {
-	position: absolute;
+	@include position(absolute);
     top: 24px;
 	right: 55px;
 	font-size: 15px;
@@ -281,7 +281,7 @@
 	@extend %cursor-pointer;
 
 	&:hover {
-		@extend %hover-transition;
+		@extend %hover-transition-slow;
 		color: $black;
 	}
 }

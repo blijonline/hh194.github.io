@@ -18,8 +18,8 @@
 	}
 
 	&:hover {
+	    @extend %hover-transition-fast;
 		color: $red;
-		transition: 0.2s ease-in;
 	}
 }
 

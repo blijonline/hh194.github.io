@@ -19,7 +19,7 @@ a {
 	color: $red;
 
 	&:hover {
-		@extend %hover-transition;
+		@extend %hover-transition-fast;
 		color: $black;
 	} 
 }

@@ -100,3 +100,16 @@
     @error "`#{$break}` is not an acceptable value. Must be 'small' 'medium' 'large' or 'x-large'. "
   }
 }
+
+
+//=========
+// Misc
+//=========
+
+@mixin position($val) {
+  position: $val;
+}
+
+@mixin display($val) {
+  display: $val;
+}

@@ -1748,8 +1748,7 @@ body.swal2-no-backdrop > .swal2-shown.swal2-bottom-right {
   color: #fff;
   font-weight: 700;
   font-size: 28px;
-  line-height: 20px;
-  transition: 0.3s; }
+  line-height: 20px; }
 
 .closebtn:hover {
   color: #0b0b0b; }
@@ -1760,8 +1759,7 @@ body.swal2-no-backdrop > .swal2-shown.swal2-bottom-right {
   margin: 5px;
   font-weight: 700;
   font-size: 38px;
-  line-height: 20px;
-  transition: 0.3s; }
+  line-height: 20px; }
 
 .line-chart-container h3 {
   margin-top: 0; }
@@ -1787,8 +1785,7 @@ body.swal2-no-backdrop > .swal2-shown.swal2-bottom-right {
       font-size: 14px;
       padding: 8px; } }
   .btn:hover {
-    color: #D91420;
-    transition: 0.3s ease-in; }
+    color: #D91420; }
 
 .message-user-area button {
   border-radius: 5px;
@@ -1883,11 +1880,11 @@ body.swal2-no-backdrop > .swal2-shown.swal2-bottom-right {
     text-align: right; }
 
 .onoffswitch-switch {
+  position: absolute;
   display: block;
   width: 18px;
   margin: 6px;
   background: #fff;
-  position: absolute;
   top: 0;
   bottom: 0;
   right: 56px;
@@ -1913,10 +1910,16 @@ body.swal2-no-backdrop > .swal2-shown.swal2-bottom-right {
 .closebtn, #fc-closeX, .btn, .message-user-area button, .save-btn, .cancel-btn, .onoffswitch-label, #noti-bell, .fa-times, .fa-angle-right, .icon-div {
   cursor: pointer; }
 
-a:hover, .message-user-area button:hover, .save-btn:hover, .cancel-btn:hover, svg:hover .hover, .noti1:hover,
+.message-user-area button:hover, .save-btn:hover, .cancel-btn:hover, svg:hover .hover, .noti1:hover,
 .noti2:hover, .noti-rule1:hover,
 .noti-rule2:hover, .fa-times:hover, .fa-angle-right:hover {
   transition: 0.4s ease-in; }
+
+.closebtn, #fc-closeX, .btn:hover {
+  transition: 0.3s ease-in; }
+
+a:hover, .logo a:hover {
+  transition: 0.2s ease-in; }
 
 .btn, #send-btn,
 .save-btn,
@@ -1936,8 +1939,8 @@ a:hover, .message-user-area button:hover, .save-btn:hover, .cancel-btn:hover, sv
   color: #fff; }
 
 #noti-bell {
-  height: 25px;
-  position: relative; }
+  position: relative;
+  height: 25px; }
 
 .dashboard-icon,
 .members-icon,
@@ -1984,8 +1987,8 @@ svg:hover .hover {
 
 /* THE RED NOTIFICATIONS COUNTER. */
 #noti_Counter {
-  display: block;
   position: absolute;
+  display: block;
   background: #D91420;
   color: #fff;
   font-size: 12px;
@@ -1999,9 +2002,9 @@ svg:hover .hover {
 
 /* THE NOTIFICAIONS WINDOW. */
 #notifications {
+  position: absolute;
   display: none;
   width: 230px;
-  position: absolute;
   top: 50px;
   left: -150px;
   background: #fbfbfb;
@@ -2438,8 +2441,7 @@ svg:hover .hover {
     .logo a {
       font-size: 24px; } }
   .logo a:hover {
-    color: #D91420;
-    transition: 0.2s ease-in; }
+    color: #D91420; }
 
 .your {
   font-weight: 800; }

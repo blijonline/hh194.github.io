@@ -11,12 +11,12 @@
 .closebtn {
     @include order(2);
     @extend %cursor-pointer;
+    @extend %hover-transition-medium;
     margin-right: 5px;
     color: $white;
     font-weight: $font-weight--bold;
     font-size: 28px;
     line-height: 20px;
-    transition: 0.3s;
 }
 
 .closebtn:hover {
@@ -27,11 +27,11 @@
     @include flexbox;
     @include justify-content(flex-end);
     @extend %cursor-pointer;
+    @extend %hover-transition-medium;
     margin: 5px; 
     font-weight: $font-weight--bold;
     font-size: 38px;
     line-height: 20px;
-    transition: 0.3s;
 }
 
 .line-chart-container h3 {
@@ -68,8 +68,8 @@
     } 
 
     &:hover {
+        @extend %hover-transition-medium;
         color: $red;
-        transition: 0.3s ease-in;
     }
 }
 
@@ -86,7 +86,7 @@
     color: $white;
 
     &:hover {
-        @extend %hover-transition;
+        @extend %hover-transition-slow;
         background: $red;
     }
 }
@@ -128,7 +128,7 @@
     color: $white;
 
     &:hover {
-        @extend %hover-transition;
+        @extend %hover-transition-slow;
         background: $red;
     }
 }
@@ -139,7 +139,7 @@
     color: $white;
 
     &:hover {
-        @extend %hover-transition;
+        @extend %hover-transition-slow;
         background: $black;
     }
 }
@@ -148,7 +148,7 @@
 // ******** ON/OFF Switches ********** //
 
 .onoffswitch {
-    position: relative; 
+    @include position(relative);
     min-width: 90px;
     max-width: 90px;
     -webkit-user-select: none; 
@@ -157,12 +157,12 @@
 }
 
 .onoffswitch-checkbox {
-    display: none;
+    @include display(none);
 }
 
 .onoffswitch-label {
     @extend %cursor-pointer;
-    display: block; 
+    @include display(block); 
     overflow: hidden; 
     border: 2px solid $white; 
     border-radius: 20px;
@@ -171,7 +171,7 @@
 
 .onoffswitch-inner:before, 
 .onoffswitch-inner:after {
-    display: block; 
+    @include display(block); 
     float: left; 
     width: 50%; 
     height: 30px; 
@@ -185,7 +185,7 @@
 }
 
 .onoffswitch-inner {
-    display: block; 
+    @include display(block);
     width: 200%; 
     margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
@@ -208,11 +208,11 @@
 
 
 .onoffswitch-switch {
-    display: block; 
+    @include position(absolute);
+    @include display(block);
     width: 18px; 
     margin: 6px;
     background: $white;
-    position: absolute; 
     top: 0; 
     bottom: 0;
     right: 56px;
