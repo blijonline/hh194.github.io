@@ -92,6 +92,8 @@ sendBtn.addEventListener('click', () => {
           text: 'Your message has been sent to ' + userName ,
           type: 'success'
         });
+            document.getElementById('search-user').value = '';
+            document.getElementById('textarea').value = '';
     } else {
         swal({
           title: 'Fill in all fields!',
